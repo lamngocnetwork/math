@@ -36,12 +36,9 @@ jobs:
           name: found github actions config
           command: ':'
 workflows:
-  example:
+  rust:
     jobs:
       - test
       - build:
-          requires:
-            - test
-      - deploy:
           requires:
             - test
